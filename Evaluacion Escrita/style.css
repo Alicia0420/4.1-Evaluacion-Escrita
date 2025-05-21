@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+.header {
+  background-color: #a83232;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bienvenida {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.btn-actualizar {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #fff;
+  color: #a83232;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-actualizar:hover {
+  background-color: #f1d2d2;
+}
+
+/* Imagen destacada */
+.imagen-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+.imagen-restaurante {
+  width: 100%;
+  max-width: 600px; /* Limita el ancho máximo */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Botones de categorías */
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.categorias button {
+  background-color: #a83232;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categorias button:hover {
+  background-color: #911f1f;
+}
+
+/* Menú dinámico */
+.menu {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+}
+
+.mensaje-extra {
+  text-align: center;
+  margin: 1rem;
+  font-style: italic;
+  color: white; /* <-- Esto hace que el texto sea visible sobre el fondo oscuro */
+}
+
+/* Footer */
+.footer {
+  background-color: #a83232;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.menu-item {
+  text-align: center; /* Centra el texto y las imágenes */
+  margin-bottom: 2rem;
+}
+
+.menu-item img {
+  display: block;
+  margin: 0 auto 0.5rem auto; /* Centrado horizontal y espacio debajo */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+#videoFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(0.6); /* Opcional: oscurece el video para que el texto resalte */
+}
+

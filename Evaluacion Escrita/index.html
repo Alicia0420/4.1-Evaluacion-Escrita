@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante El Gourmet</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 🎬 Video de fondo -->
+  <video autoplay muted loop id="videoFondo">
+    <source src="video restaurante.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <header class="header">
+    <h1>Restaurante El Gourmet</h1>
+    <p id="bienvenida" class="bienvenida">¡Bienvenido a nuestro restaurante!</p>
+    <button onclick="actualizarBienvenida()" class="btn-actualizar">Actualizar bienvenida</button>
+    <!-- 🔈 Botón de sonido -->
+    <button onclick="toggleAudio()" class="btn-actualizar">🔈 Sonido</button>
+  </header>
+
+  <main>
+    <section class="imagen-container">
+      <img src="restaurante.jpg" alt="Restaurante El Gourmet" class="imagen-restaurante">
+    </section>
+
+    <section class="categorias">
+      <button onclick="mostrarMenu('desayuno')">Desayuno</button>
+      <button onclick="mostrarMenu('comida')">Comida</button>
+      <button onclick="mostrarMenu('cena')">Cena</button>
+      <button onclick="mostrarMenu('brunch')">Brunch</button>
+    </section>
+
+    <section id="menu" class="menu"></section>
+    <div id="mensajeExtra" class="mensaje-extra"></div>
+  </main>
+
+  <footer>
+    Tecnológico Nacional de México campus Pachuca - Programación Web - Evaluación Tema - Rodrigo Axel Noeggeratn Medina-22200210, Alicia Yamileth Mariano Resendiz-2220087
+  </footer>
+
+  <!-- 🔊 Audio ambiente -->
+  <audio autoplay loop id="audioAmbiente">
+    <source src="audios/ambiente-restaurante.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
